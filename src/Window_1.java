@@ -24,9 +24,7 @@ public class Window_1 extends JFrame
 	private JPanel contentPane;
 	static Cipher cipher;
 	
-	//final String secretKey = "ssshhhhhhhhhhh!!!!";
 	static String secretKey = null;
-	//static String getMsg1 = null;
 	static String getEnc1 = null;
 	/**
 	 * Launch the application.
@@ -107,9 +105,7 @@ public class Window_1 extends JFrame
 				     
 					Window_2.display2.append(Window_1.username1 + " : " + encryptedString + "\n");
 					Window_2.display2.append("\n");
-					//Window_2.display2_2.append(Window_1.username1 + " : " + decryptedString + "\n");
 					saveEncrypt(encryptedString);
-				    //saveDecrypt(decryptedString);
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -167,9 +163,7 @@ public class Window_1 extends JFrame
 		String secretString = new String(array, Charset.forName("UTF-8"));
 		Window_1.secretKey = secretString;
 	}
-	//public static void saveDecrypt(String decryptedMessage) {
-	//	Window_1.getMsg1 = decryptedMessage;
-	//}
+
 	public static void saveEncrypt(String EncryptedMessage) {
 		Window_1.getEnc1 = EncryptedMessage;
 	}

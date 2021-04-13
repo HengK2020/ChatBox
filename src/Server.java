@@ -29,7 +29,6 @@ public class Server extends JFrame {
 	private JTextField name1;
 	private JTextField name2;
 	
-	//static Cipher cipher = null;
 	/**
 	 * Launch the application.
 	 */
